@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    color: #202223;
+    font-family: 'Fraunces', serif;
+    margin: 20px 0px 30px 0px;
+    line-height: 2rem;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: .5px .5px 15 rgba(0,0,0,.1);
+}
+
+.graphic {
+    background-image: url("images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .content {
+    grid-column: 2 / 3;
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+
+.main .content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    opacity: 70%;
+    
+}
+
+.main .content p:nth-of-type(1) {
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.main .content p:nth-of-type(2) {
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.main .content .salePrice {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+}
+
+.main .content .price {
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    margin-left: 20px;
+    opacity: 70%;
+
+}
+
+.main .content div:nth-of-type(1) {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.main .content .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.main .content .button img {
+    margin-right: 10px;
+}
+
+.main .content .button:hover {
+    cursor: pointer;
+    background-color: #204538;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 550px) {
+    h1 {
+        margin: 10px 0px 20px 0px;
+    }
+    .main {
+        height: 680px;
+    }
+    .container {
+        grid-template-columns: 350px;
+        grid-template-rows: 280px 380px;
+    }
+    .main .graphic {
+        grid-row: 1 / 2;
+    }
+    .main .content {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .main .content .button {
+        margin-top: 20px;
+    }
+
+}
