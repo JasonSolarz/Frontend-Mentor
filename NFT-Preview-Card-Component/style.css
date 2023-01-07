@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+
+main {
+    width: 350px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+
+main img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+section .card-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+section .card-text {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section div .ethereum {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+section div .clock {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+section img {
+    margin-right: 7px;
+}
+
+section .creator {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+section .creator img {
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+section .creator .lightBlue {
+    color: hsl(215, 51%, 70%);
+    white-space:pre;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
