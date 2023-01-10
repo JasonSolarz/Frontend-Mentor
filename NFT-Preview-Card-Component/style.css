@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    width: 350px;
+    width: 340px;
     background-color: hsl(216, 50%, 16%);
     padding: 20px;
     border-radius: 15px;
@@ -46,13 +46,15 @@ main .background-image {
     background-size: contain;
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 
 main .view-icon {
     opacity: 0;
     padding: 126px;
     background-color: hsla(178, 100%, 50%, .50);
-
+    border-radius: 10px;
+    border: none;
 }
 
 main .view-icon:hover {
