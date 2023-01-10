@@ -21,9 +21,9 @@ body {
 }
 
 main {
-    width: 340px;
+    width: 350px;
     background-color: hsl(216, 50%, 16%);
-    padding: 20px;
+    padding: 25px;
     border-radius: 15px;
 }
 
@@ -43,10 +43,8 @@ main .background-image {
     background-image: url(images/image-equilibrium.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
+    background-size:cover;
+    border-radius: 15px;
 }
 
 main .view-icon {
@@ -54,6 +52,7 @@ main .view-icon {
     padding: 126px;
     background-color: hsla(178, 100%, 50%, .50);
     border-radius: 10px;
+    width: 300px;
     border: none;
 }
 
@@ -76,7 +75,7 @@ section .card-title:hover {
 
 section .card-text {
     color: hsl(215, 51%, 70%);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     margin-bottom: 20px;
 }
