@@ -12,18 +12,52 @@ body {
     background-color: hsl(217, 54%, 11%);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 main {
     width: 350px;
     background-color: hsl(216, 50%, 16%);
     padding: 20px;
     border-radius: 15px;
-    margin: 50px auto;
+}
+
+main .sr-only {
+    position: absolute; 
+    top: auto; 
+    height: 1px; 
+    width: 1px; 
+    overflow: hidden;
 }
 
 
-main img {
-    max-width: 100%;
-    border-radius: 10px;
+main .background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/image-equilibrium.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+}
+
+main .view-icon {
+    opacity: 0;
+    padding: 126px;
+    background-color: hsla(178, 100%, 50%, .50);
+
+}
+
+main .view-icon:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 section .card-title {
@@ -31,6 +65,11 @@ section .card-title {
     font-size: 1.4rem;
     font-weight: 600;
     margin: 20px 0;
+}
+
+section .card-title:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 section .card-text {
@@ -49,6 +88,7 @@ section div .ethereum {
     display: flex;
     align-items: center;
     color: hsl(178, 100%, 50%);
+    font-weight: 600;
 }
 
 section div .clock {
@@ -78,10 +118,16 @@ section .creator img {
     margin-right: 20px;
 }
 
+section .creator-name:hover {
+
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
 section .creator .lightBlue {
     color: hsl(215, 51%, 70%);
     white-space:pre;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer { font-size: 11px; text-align: center; margin-top: 20px; }
+footer a { color: hsl(228, 45%, 44%); }
