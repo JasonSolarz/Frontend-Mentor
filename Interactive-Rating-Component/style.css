@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main, section {
+    background-color: hsl(213, 19%, 18%);
+    width: 400px;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+main .sr-only {
+    position: absolute;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+main .star {
+    padding: 15px;
+    background-image: url(images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(214, 19%, 21%);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+main .question-title,
+section .section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main .question-text,
+section .section-text {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5rem;
+    margin-bottom: 30px;
+}
+
+main ul {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+main ul li {
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(214, 19%, 21%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+main ul li:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+main .submit {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+}
+
+main .submit:hover {
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+section img {
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+}
+
+section .rating {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(214, 19%, 21%);
+    padding: 7px 5px 3px 7px;
+    border-radius: 20px;
+    width: 175px;
+    text-align: center;
+    margin: 25px auto;    
+}
+
+section .section-title,
+section .section-text {
+    text-align: center;
+}
+
+
+
+.selected {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+.display-not {
+    display: none;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 420px) {
+    main, section {
+        width: 350px;
+    }
+}
