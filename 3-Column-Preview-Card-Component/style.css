@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
+  font-size: 65%;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "section-one section-two section-three";
+  margin: 1.2rem;
+}
+
+main .section-one,
+main .section-two,
+main .section-three {
+  max-width: 23.438rem;
+  padding: 3.313rem;
+}
+
+main img {
+  width: 4.688rem;
+}
+
+main .section-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 1.875rem 0;
+}
+
+main .section-text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+main .section-one {
+  grid-area: section-one;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 0.625rem 0 0 0.625rem;
+}
+
+main .section-one button {
+  color: hsl(31, 77%, 52%);
+}
+
+main .section-two {
+  grid-area: section-two;
+  background-color: hsl(184, 100%, 22%);
+}
+
+main .section-two button {
+  color: hsl(184, 100%, 22%);
+}
+
+main .section-three {
+  grid-area: section-three;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0.625rem 0.625rem 0;
+}
+
+main .section-three button {
+  color: hsl(179, 100%, 13%);
+}
+
+main button {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 1.2rem;
+  border: none;
+  margin-top: 6rem;
+  padding: 1.063rem 2.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+main button:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+  border: 0.125rem solid #fff;
+  padding: .9rem 2.5rem;
+}
+
+footer {
+  color: #2d2d2d;
+  font-size: 1rem; 
+  text-align: center;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 62.5rem) {
+  body {
+    height:auto;
+  }
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "section-one" 
+    "section-two" 
+    "section-three";
+  }
+  main .section-one,
+  main .section-two,
+  main .section-three {
+    padding: 2.5rem;
+  }
+  main .section-one {
+    border-radius: 0.625rem 0.625rem 0 0;
+  }
+  main .section-three {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+  main .section-text {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+  main button {
+    margin-top: 2rem;
+  }
+}
