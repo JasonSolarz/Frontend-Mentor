@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+  width: 28.125rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main img {
+  border-radius: 20px 20px 0 0;
+}
+
+section {
+  padding: 30px 50px;
+
+}
+
+section .headline {
+  color: hsl(223, 47%, 23%);
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section .paragraph {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+
+section .details {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F9FE;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+section .icon {
+  width: 3rem;
+  align-self: flex-start;
+  margin: 0px 20px;
+}
+
+section .plan p:nth-of-type(1) {
+  width: 100px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+section .plan p:nth-of-type(2) {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+section .link {
+  width: 200px;
+  text-align: right;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+}
+
+section .link:hover {
+  opacity: 70%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section .submit {
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  font-size: 1rem;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section .submit:hover {
+  opacity: 70%;
+  cursor: pointer;
+}
+
+section .cancel {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;;
+  text-align: center;
+  margin-top: 20px;
+}
+
+section .cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 20px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+  main {
+    width: 20rem;
+  }
+  main img {
+    width: 20rem;
+  }
+  section {
+    padding: 25px;
+  }
+  section .headline {
+    font-size: 1.5rem;
+  }
+  section .icon {
+    margin-left: 0;
+  }
+  section .plan {
+    font-size: .9rem;
+  }
+
+  section .link {
+    font-size: .8rem;
+    font-weight: 900;
+  }
+
+}
